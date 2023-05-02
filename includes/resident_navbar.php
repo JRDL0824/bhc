@@ -18,11 +18,11 @@
       <span>Book an Appointment</span>
     </a>
   </li>
-  <li class="nav-item">
+  <!-- <li class="nav-item">
     <a class="nav-link" href="resident_viewappointment.php">
       <span>View appointments</span>
     </a>
-  </li>
+  </li> -->
   <hr class="sidebar-divider">
   <div class="sidebar-heading">Announcements</div>
   <li class="nav-item">

@@ -1,20 +1,6 @@
 <?php
 include 'includes/conn.php';
 session_start();
-
-if(isset($_POST['login_btn'])){
-  $u_name = mysqli_real_escape_string($conn, $_POST['u_name']);
-  $u_password = mysqli_real_escape_string($conn, $_POST['u_password']);
-
-  $select = mysqli_query($conn, "SELECT * FROM `resident` WHERE u_name = '$u_name' AND u_password = '$u_password'");
-  if(mysqli_num_rows($select) > 0){
-    $row = mysqli_fetch_assoc($select);
-    $_SESSION['u_id'] = $row['u_id'];
-    header('location:resident_profile.php');
-  }else{
-    header('location:index.php');
-  }
-}
 ?>
 
 <!DOCTYPE html>
@@ -66,6 +52,44 @@ if(isset($_POST['login_btn'])){
                       <input type="submit" class="btn login_btn btn-primary btn-user btn-block" name="login_btn" value="Login">
                       <br>
                     </form>
+
+                    <?php
+                    if(isset($_POST['login_btn'])){
+                      $u_name = mysqli_real_escape_string($conn, $_POST['u_name']);
+                      $u_password = mysqli_real_escape_string($conn, $_POST['u_password']);
+  
+                      $select = mysqli_query($conn, "SELECT * FROM `resident` WHERE u_name = '$u_name' AND u_password = '$u_password'");
+                      if(mysqli_num_rows($select) > 0){
+                        $row = mysqli_fetch_assoc($select);
+                        $_SESSION['u_id'] = $row['u_id'];
+                        echo '<script>
+                        swal({
+                          title: "Success",
+                          text: "Redirecting in 2 seconds.",
+                          type: "success",
+                          icon: "success",
+                          timer: 2000,
+                          showConfirmButton: false
+                        }).then(function() {
+                          window.location = "resident_profile.php";   //replace google.com with the link u want to go when unsuccesfull login
+                        });
+                        </script>';
+                      }else{
+                        echo '<script>
+                        swal({
+                          title: "Error",
+                          text: "Incorrect account credentials",
+                          type: "error",
+                          icon: "error",
+                          button: "Okay",
+                        }).then(function() {
+                          window.location = "resident_login.php";   //replace google.com with the link u want to go when unsuccesfull login
+                        });
+                        </script>';
+                      }
+                    }
+                    ?>
+
                     <div class="small">Doesn't have an account? <a href="resident_register.php">Sign up!</a></div>
                     <hr>
                     <div class="container my-auto">
