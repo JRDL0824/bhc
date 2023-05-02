@@ -61,7 +61,7 @@ if(isset($_POST['b_app'])){
       icon: "success",
       button: "Okay",
     }).then(function() {
-      window.location = "resident_viewappointment.php";   //replace google.com with the link u want to go when unsuccesfull login
+      window.location = "resident_bookappointment.php";   //replace google.com with the link u want to go when unsuccesfull login
     });
     </script>';
   } else{
