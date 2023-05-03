@@ -4,6 +4,7 @@ include('includes/resident_navbar.php');
 include('includes/conn.php');
 ?>
 
+
 <div class="container-fluid">
   <div class="card card-primary">
     <div class="card-header">
