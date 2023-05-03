@@ -2,7 +2,7 @@
 include('includes/header.php');
 include('includes/conn.php');
 ?>
-<!-- try -->
+<!-- tr -->
 <div class="container" >
   <div class="row justify-content-center " ;>
     <div class="col-xl-6 col-lg-6 col-md-6">
