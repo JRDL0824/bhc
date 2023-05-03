@@ -54,7 +54,7 @@ include('includes/admin_navbar.php');
             <td>$row[a_what]</td>
             <td>$row[a_when]</td>
             <td>
-            <a href='brgyadmin_displayannouncement.php?a_id=$row[a_id];' name='details_btn' class='btn'>
+            <a href='brgyadmin_displayannouncement.php?a_id=$row[a_id];' name='details_btn' class='btn btn-primary'>
                 Details
                 <a class='btn btn-danger' href='brgy_a_delete.php?a_id=$row[a_id]'>Delete</a>
               </a>
