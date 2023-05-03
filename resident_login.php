@@ -14,7 +14,7 @@ session_start();
   <meta name="description" content="">
   <meta name="author" content="">
 
-<title> Health Center Reservation System</title>
+<title> Barangay Sambal Ilaya Health Center Appointment System</title>
 
   <!-- Custom fonts for this template-->  
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -39,7 +39,7 @@ session_start();
                 <div class="col-lg-12">
                   <div class="p-5">
                     <div class="text-center">
-                      <h1 class="h4 text-gray-900 mb-4">Health Center Reservation System</h1>
+                      <h1 class="h4 text-gray-900 mb-4">Barangay Sambal Ilaya Health Center Appointment System</h1>
                       <h1 class="h4 text-gray-900 mb-4">Resident Login</h1>
                     </div>
                     <form class="user" action="" method="POST">
@@ -94,7 +94,7 @@ session_start();
                     <hr>
                     <div class="container my-auto">
                       <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Health Center Reservation System 2021 </span>
+                        <span>Copyright &copy; Barangay Sambal Ilaya Health Center Appointment System 2023 </span>
                       </div>
                     </div>
                   </div>
