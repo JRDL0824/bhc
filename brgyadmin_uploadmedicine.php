@@ -41,10 +41,10 @@ require 'includes/conn.php';
 
 <?php 
 if(isset($_POST['m_upload'])){
-    $b_name = $_POST['b_name'];
-    $g_name = $_POST['g_name'];
-    $dossage = $_POST['dossage'];
-    $supplies = $_POST['supplies'];
+    $b_name = $_POST['Losartan'];
+    $g_name = $_POST['Coozar'];
+    $dossage = $_POST['100mg'];
+    $supplies = $_POST['10boxes'];
 
 
     $sql = "INSERT INTO medicine (b_name,g_name,dossage,supplies) VALUES ('$b_name','$g_name','$dossage','$supplies')";
