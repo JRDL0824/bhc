@@ -46,7 +46,7 @@ if(isset($_POST['m_upload'])){
     $supplies = $_POST['supplies'];
 
 
-    $sql = "INSERT INTO medicine (b_name,g_name,dossage,supplies) VALUES ('$b_name','$g_name','$dossage','$supplies')";
+    $sql = "INSERT INTO medicine (b_name,g_name,dossage,supplies) VALUES ('$Losartan','$Coozar,'$100mg','$10boxes')";
     if(mysqli_query($conn,$sql)){
       echo '<script>
 			swal({
