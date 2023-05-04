@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion" id="accordionSidebar">
   <a class="sidebar-brand d-flex align-items-center justify-content-center" href="resident_profile.php">
     <div class="sidebar-brand-icon "></div>
-    <div class="sidebar-brand-text mx-1">Barangay Sambal Ilaya Health Center Appointment System</div>
+    <div class="sidebar-brand-text mx-1">Barangay SambalIlaya Health Center Appointment System</div>
   </a>
   <br>
   <hr class="sidebar-divider my-0">
