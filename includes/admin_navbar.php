@@ -2,7 +2,7 @@
 <ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion" id="accordionSidebar">
   <div class="sidebar-brand d-flex align-items-center justify-content-center">
     <div class="sidebar-brand-icon "></div>
-    <div class="sidebar-brand-text mx-1">Health Center Reservation System</div>
+    <div class="sidebar-brand-text mx-1">Barangay Sambal Ilaya Health Center Appointment System</div>
   </div>
   <hr class="sidebar-divider">
   <div class="sidebar-heading">
